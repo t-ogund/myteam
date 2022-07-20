@@ -10,6 +10,7 @@ body {
     margin: 0 auto;
     font-family: livvic;
     overflow-x: hidden;
+    /* max-width: 1400px; */
     /* max-width: 1366px; */
 }
 
@@ -110,33 +111,74 @@ a:visited {
 
 #home-5 {
     position: absolute;
+    /* left: 200px;
+    top: 1300px; */
     top: 1373px;
     left: 1156px;
+    /* z-index: 99; */
+
 }
 
 #quotes {
     position: absolute;
-    /* z-index: -1; */
+    z-index: 1;
+    align-self: center;
+    /* left: 200px; */
 }
 
 /* #success-blurb-container p {
     z-index: -1;
 } */
 
+#about {
+    padding: 2em 10em 2em 10em;
+    background-color: #014e56;
+}
+
 #about-hero {
     width: 30%;
-    background-color: red;
+    color: white;
 }
 
 #about-text-section {
     display: flex;
-    background-color: green;
+    background-color: #014e56;
+    color: white;
     align-items: center;
     width: 70%;
 }
 
 #about-text {
     font-size: 4em;
+}
+
+#about-1 {
+    position: absolute;
+    top: 200px;
+    right: -100px;
+}
+
+#about-2 {
+    position: absolute;
+    left: -100px;
+}
+
+#about-4 {
+    position: absolute;
+    top: 1075px;
+    right: 0px;
+}
+
+#about-5 {
+    position: absolute;
+    top: 1175px;
+    left: 0px;
+}
+
+#about-6 {
+    position: absolute;
+    top: 1510px;
+    left: 0px;
 }
 
 #talent-text {
@@ -164,6 +206,7 @@ a:visited {
 
 .build-teams-icons {
     height: 3em;
+    margin-right: 1rem;
     /* width: 3em; */
 }
 
@@ -210,10 +253,14 @@ a:visited {
 
 .success-blurb-container {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .success-blurb-container p, h6 {
     color: white;
+    position: relative;
+    z-index: 1;
 }
 
 .success-blurb-container h5 {
@@ -239,7 +286,7 @@ a:visited {
 #get-started-container {
     display: flex;
     justify-content: space-between;
-    padding: 0 12em 0 12em;
+    padding: 3rem 12em 1.75rem 12em;
     background-color: #F67E7E;
 }
 
@@ -316,6 +363,15 @@ footer {
 #footer-2 > #container > #socials img {
     height: 1em;
     padding: .5em;
+    color: white;
+}
+
+#footer-2 > #container > #socials img:hover {
+    height: 1em;
+    padding: .5em;
+    background-color: purple;
+    color: #F67E7E;
+    /* fill: pink; */
 }
 
 /* About Page */
@@ -328,33 +384,38 @@ footer {
 #director-container {
     display: flex;
     justify-content: space-between;
-    background-color: green;
     flex-wrap: wrap;
+    padding: 2em 10em 2em 10em;
+    /* max-width: 1400px; */
 }
 
 .director-card {
     /* display: grid; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: relative;
     width: 22rem;
     /* height: auto; */
     padding: 3em 0 3em 0;
-
+    background-color: #012F34;
     margin-bottom: 3rem;
 }
 
-/* #directors {
-    background-color: 
-} */
+#directors {
+    background-color: #004047;
+}
 
 #directors > h2 {
+    padding: 3rem 0 3rem 0;
     text-align: center;
+    color: white;
+    margin: 0;
 }
 
 .director-image {
     border-radius: 50%;
     width: 7em;
     /* height: auto; */
+    border: 1px solid white;
     margin: 0 auto 0 auto;
     display: block;
 }
@@ -362,6 +423,14 @@ footer {
 .director-card > h4, .director-card > h6 {
     text-align: center;
     margin: 0;
+}
+
+.director-card > h4 {
+    color: #79C8C7;
+}
+
+.director-card > h6 {
+    color: #fff;
 }
 
 .cross-container {
@@ -377,13 +446,22 @@ footer {
     position: absolute;
     bottom: -1.5rem;
     left: 45%;
-    background-color: blue;
+    background-color: #F67E7E;
     /* z-index: 10; */
     /* margin: 0 auto; */
 }
 
 #client-section {
     text-align: center;
+    background-color: #012F34;
+    /* padding-bottom: 3rem; */
+    padding: 4em 10em 4em 10em;
+}
+
+#client-section h2 {
+    margin: 0;
+    padding: 3rem 0 3rem 0;
+    color: white;
 }
 
 #clients {
@@ -400,8 +478,37 @@ footer {
     width: 50%;
 }
 
+#contact-1 {
+    position: absolute;
+    left: -100px;
+}
+
+#contact-2 {
+    position: absolute;
+    right: -100px;
+    top: 565px;
+}
+
+#contact h2 {
+    font-size: 5.5rem;
+    margin: 0 0 2rem 0;
+    color: white;
+}
+
+#contact h4 {
+    font-size: 2.25rem;
+    margin: 0;
+    color: #F67E7E;
+}
+
+.contact-body {
+    min-height: 100vh;
+}
+
 #contact-section {
     display: flex;
+    padding: 2em 10em 9em 10em;
+    background-color: #014e56;
 }
 
 #contact-form {
@@ -411,23 +518,70 @@ footer {
 }
 
 #contact-form input {
-    padding: 1rem;
+    padding: 1.5rem 0 1.5rem 0;
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: 1px solid white;
     margin: 1px;
-    background-color: purple;
+    background-color: #014e56;
+    color: white;
+    outline: none;
+}
+
+#contact-form input::placeholder {
+    padding: 1.5rem 0 1.5rem 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    margin: 1px;
+    background-color: #014e56;
+    color: white;
+    outline: none;
+}
+
+
+#contact-form button {
+    margin-top: 2rem;
+    padding: .75rem;
+    border-radius: 25px;
+    width: 8rem;
+    border: none;
 }
 
 textarea {
-    background-color: purple;
+    background-color: #014e56;
+    height: 5rem;
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: 1px solid white;
+    color: white;
+    outline: none;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+textarea::placeholder {
+    color: white;
+    font-family: livvic;
 }
 
 .contact-page {
     /* height: 100vh; */
+}
+
+.contact-build-team-info {
+    display: flex;
+    margin-top: 2.37rem;
+}
+
+#home-6 {
+    position: absolute;
+    left: 0px;
+    /* top: 800px;
+    left: 800px;
+    z-index: -10; */
 }
 
 @media screen and (max-width: 1295px) {
