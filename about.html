@@ -10,6 +10,21 @@
 </head>
 <body>
     <!-- <div id='container'> -->
+
+        <div id='mobile-menu-container'>
+            <div class='hide' id='menu-drawer'>
+                <div id='close-icon-container'>
+                    <img id='close-icon' src='icon-close.svg' alt='' />
+                </div>
+                <a href='index.html'><h2>home</h2></a>
+                <a href='about.html'><h2>about</h2></a>
+                <button><a href='contact.html'>contact us</a></button>
+                <!-- <p>test</p>
+                <p>test</p>
+                <p>test</p> -->
+            </div>
+        </div>
+
         <header id='header'>
             <div id='header-1'>
                 <h1><a href='index.html'>myteam</a></h1>
@@ -20,6 +35,7 @@
             </div>
             <div id='header-2'>
                 <button><a href='contact.html'>contact us</a></button>
+                <img id='hamburger' src='icon-hamburger.svg' alt='' />
             </div>
         </header>
 
@@ -28,9 +44,9 @@
                 <h2 id='about-text'>About</h2>
             </div>
             <div id='about-text-section'>
-                We help companies build dynamic teams made up of top global talent. Using our<br>
-                network of passionate professional we drive innovation and deliver incredible<br>
-                outcomes. Talented, diverse teams shape the best products and experiences. We'll<br>
+                We help companies build dynamic teams made up of top global talent. Using our<br class='about-break'>
+                network of passionate professional we drive innovation and deliver incredible<br class='about-break'>
+                outcomes. Talented, diverse teams shape the best products and experiences. We'll<br class='about-break'>
                 bring those teams to you.
             </div>
             <img id='about-1' src='bg-pattern-about-1-mobile-nav-1.svg' alt='' />
@@ -41,57 +57,147 @@
         <h2>Meet the Directors</h2>
         <div id='director-container'>
             <div class='director-card'>
-                <img class='director-image' src='avatar-nikita.jpg' />
-                <h4>Nikita Marks</h4>
-                <h6>Founder & CEO</h6>
-                <div class='cross-container'>
-                   <img src='icon-cross.svg' />
+                <div class='side-1'>
+                    <img class='director-image' src='avatar-nikita.jpg' />
+                    <h4>Nikita Marks</h4>
+                    <h6>Founder & CEO</h6>
+                    <div class='cross-container'>
+                        <img src='icon-cross.svg' />
+                    </div>
+                </div>
+                <div class='side-2 hide'>
+                    <h4>Nikita Marks</h4>
+                    <p>“It always amazes me how much talent there 
+                        is in every corner of the globe.”
+                    </p>
+                    <div class='about-socials'>
+                        <img src='icon-twitter.svg' alt='' />
+                        <img src='icon-linkedin.svg' alt='' />
+                    </div>
+                    <div class='close-about'>
+                        <img src='icon-cross.svg' />
+                    </div>
                 </div>
             </div>
 
             <div class='director-card'>
-                <img class='director-image' src='avatar-christian.jpg' />
-                <h4>Cristian Duncan</h4>
-                <h6>Co-founder & COO</h6>
-                <div class='cross-container'>
-                   <img src='icon-cross.svg' />
+                <div class='side-1'>
+                    <img class='director-image' src='avatar-christian.jpg' />
+                    <h4>Cristian Duncan</h4>
+                    <h6>Co-founder & COO</h6>
+                    <div class='cross-container'>
+                        <img src='icon-cross.svg' />
+                    </div>
+                </div>
+                <div class='side-2 hide'>
+                    <h4>Cristian Duncan</h4>
+                    <p>
+                        “Distributed teams required unique processes. You need to approach work in a new way.”
+                    </p>
+                    <div class='about-socials'>
+                        <img src='icon-twitter.svg' alt='' />
+                        <img src='icon-linkedin.svg' alt='' />
+                    </div>
+                    <div class='close-about'>
+                        <img src='icon-cross.svg' />
+                    </div>
                 </div>
             </div>
 
             <div class='director-card'>
-                <img class='director-image' src='avatar-cruz.jpg' />
-                <h4>Cruz Hamer</h4>
-                <h6>Co-founder & CTO</h6>
-                <div class='cross-container'>
-                    <img src='icon-cross.svg' />
-                 </div>
+                <div class='side-1'>
+                    <img class='director-image' src='avatar-cruz.jpg' />
+                    <h4>Cruz Hamer</h4>
+                    <h6>Co-founder & CTO</h6>
+                    <div class='cross-container'>
+                        <img src='icon-cross.svg' />
+                    </div>
+                </div>
+                <div class='side-2 hide'>
+                    <h4>Cruz Hamer</h4>
+                    <p>
+                        “Technology is at the forefront of enabling distributed teams. That's where we come in.”
+                    </p>
+                    <div class='about-socials'>
+                        <img src='icon-twitter.svg' alt='' />
+                        <img src='icon-linkedin.svg' alt='' />
+                    </div>
+                    <div class='close-about'>
+                        <img src='icon-cross.svg' />
+                    </div>
+                </div>
             </div>
 
              <div class='director-card'>
-                <img class='director-image' src='avatar-drake.jpg' />
-                <h4>Drake Heaton</h4>
-                <h6>Business Development Lead</h6>
-                <div class='cross-container'>
-                    <img src='icon-cross.svg' />
-                 </div>
+                <div class='side-1'>
+                    <img class='director-image' src='avatar-drake.jpg' />
+                    <h4>Drake Heaton</h4>
+                    <h6>Business Development Lead</h6>
+                    <div class='cross-container'>
+                        <img src='icon-cross.svg' />
+                    </div>
+                </div>
+                <div class='side-2 hide'>
+                    <h4>Drake Heaton</h4>
+                    <p>
+                        “Hiring similar people from similar backgrounds is a surefire way to stunt innovation.”
+                    </p>
+                    <div class='about-socials'>
+                        <img src='icon-twitter.svg' alt='' />
+                        <img src='icon-linkedin.svg' alt='' />
+                    </div>
+                    <div class='close-about'>
+                        <img src='icon-cross.svg' />
+                    </div>
+                </div>
             </div>
 
             <div class='director-card'>
-                <img class='director-image' src='avatar-griffin.jpg' />
-                <h4>Griffin Wise</h4>
-                <h6>Lead Marketing</h6>
-                <div class='cross-container'>
-                    <img src='icon-cross.svg' />
-                 </div>
+                <div class='side-1'>
+                    <img class='director-image' src='avatar-griffin.jpg' />
+                    <h4>Griffin Wise</h4>
+                    <h6>Lead Marketing</h6>
+                    <div class='cross-container'>
+                        <img src='icon-cross.svg' />
+                    </div>
+                </div>
+                <div class='side-2 hide'>
+                    <h4>Griffin Wise</h4>
+                    <p>
+                        “Unique perspectives shape unique products, which is what you need to survive these days.” 
+                    </p>
+                    <div class='about-socials'>
+                        <img src='icon-twitter.svg' alt='' />
+                        <img src='icon-linkedin.svg' alt='' />
+                    </div>
+                    <div class='close-about'>
+                        <img src='icon-cross.svg' />
+                    </div>
+                </div>
             </div>
 
             <div class='director-card'>
-                <img class='director-image' src='avatar-aden.jpg' />
-                <h4>Aden Allan</h4>
-                <h6>Head of Talent</h6>
-                <div class='cross-container'>
-                    <img src='icon-cross.svg' />
-                 </div>
+                <div class='side-1'>
+                    <img class='director-image' src='avatar-aden.jpg' />
+                    <h4>Aden Allan</h4>
+                    <h6>Head of Talent</h6>
+                    <div class='cross-container'>
+                        <img src='icon-cross.svg' />
+                    </div>
+                </div>
+                <div class='side-2 hide'>
+                    <h4>Aden Allan</h4>
+                    <p>
+                        “Empowered teams create truly amazing products. Set the north star and let them follow it.” 
+                    </p>
+                    <div class='about-socials'>
+                        <img src='icon-twitter.svg' alt='' />
+                        <img src='icon-linkedin.svg' alt='' />
+                    </div>
+                    <div class='close-about'>
+                        <img src='icon-cross.svg' />
+                    </div>
+                </div>
             </div>
         <img id='about-4' src="bg-pattern-home-4-about-3.svg" alt="">
         </div>
@@ -139,5 +245,6 @@
     </div>
     </footer>
     <!-- </div> -->
+    <script src='script.js'></script>
 </body>
 </html>
