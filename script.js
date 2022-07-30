@@ -6,6 +6,17 @@ const side1 = document.querySelectorAll('.side-1');
 const side2 = document.querySelectorAll('.side-2');
 const directorContainer = document.querySelector('#director-container');
 const closeAbout = document.querySelectorAll('.close-about');
+const required = document.querySelectorAll('.required');
+
+//contact page variables
+const form = document.querySelector('#contact-form');
+const contactName = document.querySelector('#name');
+
+const email = document.querySelector('#email');
+const company = document.querySelector('#company');
+const title = document.querySelector('#title');
+const message = document.querySelector('#message');
+const submit = document.querySelector('#submit');
 
 hamburgerMenu.addEventListener('click', (e) => {
     menuDrawer.classList.remove('hide');
@@ -24,6 +35,8 @@ for (let i = 0; i < aboutButton.length; i++) {
     })
 }
 
+const inputs = [ contactName, email, company, title, message ]
+
 for (let i = 0; i < closeAbout.length; i++) {
     closeAbout[i].addEventListener('click', () => {
         console.log('close');
@@ -32,9 +45,13 @@ for (let i = 0; i < closeAbout.length; i++) {
     })
 }
 
-// directorContainer.addEventListener('click', (e) => {
-//     console.log(e)
-//     // if (e.target.tagName === 'IMG') {
-//     //     console.log('clicked!')
-//     // }
-// })
+submit.addEventListener('click', (e) => {
+    e.preventDefault();
+    for (let i = 0; i < inputs.length; i++) {
+        if (inputs[i].value === '') {
+            required[i].classList.remove('hide');
+        } else {
+            required[i].classList.add('hide');
+        }
+    }
+})

@@ -1,113 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@100;400&family=Montserrat&family=Outfit:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:wght@100;400&family=Montserrat&family=Outfit:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body class='contact-body'>
-
-    <div id='mobile-menu-container'>
-        <div class='hide' id='menu-drawer'>
-            <div id='close-icon-container'>
-                <img id='close-icon' src='icon-close.svg' alt='' />
-            </div>
-            <a href='index.html'><h2>home</h2></a>
-            <a href='about.html'><h2>about</h2></a>
-            <button><a href='contact.html'>contact us</a></button>
-            <!-- <p>test</p>
-            <p>test</p>
-            <p>test</p> -->
+  </head>
+  <body class="contact-body">
+    <div id="mobile-menu-container">
+      <div class="hide" id="menu-drawer">
+        <div id="close-icon-container">
+          <img id="close-icon" src="icon-close.svg" alt="" />
         </div>
+        <a href="index.html"><h2>home</h2></a>
+        <a href="about.html"><h2>about</h2></a>
+        <button><a href="contact.html">contact us</a></button>
+      </div>
     </div>
 
-        <header id='header'>
-            <div id='header-1'>
-                <h1><a href='index.html'>myteam</a></h1>
-                <ul class='menu'>
-                    <li><a href='index.html'>home</a></li>
-                    <li><a href='about.html'>about</a></li>
-                </ul>
-            </div>
-            <div id='header-2'>
-                <button><a href='contact.html'>contact us</a></button>
-                <img id='hamburger' src='icon-hamburger.svg' alt='' />
-            </div>
-        </header>
+    <header id="header">
+      <div id="header-1">
+        <h1><a href="index.html">myteam</a></h1>
+        <ul class="menu">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+      </div>
+      <div id="header-2">
+        <button><a href="contact.html">contact us</a></button>
+        <img id="hamburger" src="icon-hamburger.svg" alt="" />
+      </div>
+    </header>
 
-        <section id='contact-section'>
-        <img id='contact-1' src='bg-pattern-about-2-contact-1.svg' alt='' />
-            <div id='contact'>
-                <h2>Contact</h2>
-                <h4>Ask us about</h4>
+    <section id="contact-section">
+      <img id="contact-1" src="bg-pattern-about-2-contact-1.svg" alt="" />
+      <div id="contact">
+        <h2>Contact</h2>
+        <h4>Ask us about</h4>
 
-                <div class='contact-build-team-info'>
-                    <div class='image-container'>
-                        <img class='build-teams-icons' src='icon-person.svg' />
-                    </div>
-                    <div class='text-container'>
-                        <p>The quality of our talent network</p>
-                    </div>
-                </div>
+        <div class="contact-build-team-info">
+          <div class="image-container">
+            <img class="build-teams-icons" src="icon-person.svg" />
+          </div>
+          <div class="text-container">
+            <p>The quality of our talent network</p>
+          </div>
+        </div>
 
-                <div class='contact-build-team-info'>
-                    <div class='image-container'>
-                        <img class='build-teams-icons' src='icon-cog.svg' />
-                    </div>
-                    <div class='text-container'>
-                        <p>Usage and implementation of our software</p>
-                    </div>
-                </div>
+        <div class="contact-build-team-info">
+          <div class="image-container">
+            <img class="build-teams-icons" src="icon-cog.svg" />
+          </div>
+          <div class="text-container">
+            <p>Usage and implementation of our software</p>
+          </div>
+        </div>
 
-                <div class='contact-build-team-info'>
-                    <div class='image-container'>
-                        <img class='build-teams-icons' src='icon-chart.svg' />
-                    </div>
-                    <div class='text-container'>
-                        <p>How we help drive innovation</p>
-                    </div>
-                </div>
-            </div>
-                <form id='contact-form'>
-                    <input placeholder='Name' type="text">
-                    <input placeholder='Email Address' type="email">
-                    <input placeholder='Company Name' type="text">
-                    <input placeholder='Title' type="text">
-                    <textarea placeholder='Message'></textarea>
-                    <div>
-                        <button>submit</button>
-                    </div>
-                </form>
-        <img id='contact-2' src="bg-pattern-contact-2.svg" alt="">
-        </section>
-       
+        <div class="contact-build-team-info">
+          <div class="image-container">
+            <img class="build-teams-icons" src="icon-chart.svg" />
+          </div>
+          <div class="text-container">
+            <p>How we help drive innovation</p>
+          </div>
+        </div>
+      </div>
+      <form id="contact-form">
+        <input id="name" placeholder="Name" type="text" />
+        <p class="hide required">This field is required</p>
+
+        <input id="email" placeholder="Email Address" type="email" />
+        <p class="hide required">This field is required</p>
+
+        <input id="company" placeholder="Company Name" type="text" />
+        <p class="hide required">This field is required</p>
+
+        <input id="title" placeholder="Title" type="text" />
+        <p class="hide required">This field is required</p>
+
+        <textarea id="message" placeholder="Message"></textarea>
+        <p class="hide required">This field is required</p>
+
+        <div>
+          <button id="submit">submit</button>
+        </div>
+      </form>
+      <img id="contact-2" src="bg-pattern-contact-2.svg" alt="" />
+    </section>
+
     <footer>
       <div id="footer-1">
-        <div id='footer-menu'>
-            <h2>myteam</h2>
-            <ul>
-                <li><a href='index.html'>home</a></li>
-                <li><a href='about.html'>about</a></li>
-            </ul>
+        <div id="footer-menu">
+          <h2>myteam</h2>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+          </ul>
         </div>
         <div id="address">
-            <p>987 Hillcrest Lane<br>Irvine, CA<br>California 92714<br>Call Us: 949-833-7432</p>
+          <p>
+            987 Hillcrest Lane<br />Irvine, CA<br />California 92714<br />Call
+            Us: 949-833-7432
+          </p>
         </div>
       </div>
       <div id="footer-2">
         <div id="container">
-            <div id="socials">
-                <img src="icon-facebook.svg" />
-                <img src="icon-pinterest.svg" />
-                <img src="icon-twitter.svg" />
-            </div>
-            <p>Copyright 2020. All Rights Reserved</p>
+          <div id="socials">
+            <img src="icon-facebook.svg" />
+            <img src="icon-pinterest.svg" />
+            <img src="icon-twitter.svg" />
+          </div>
+          <p>Copyright 2020. All Rights Reserved</p>
         </div>
-    </div>
+      </div>
     </footer>
-    <script src='script.js'></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
