@@ -7,6 +7,8 @@ const side2 = document.querySelectorAll('.side-2');
 const directorContainer = document.querySelector('#director-container');
 const closeAbout = document.querySelectorAll('.close-about');
 const required = document.querySelectorAll('.required');
+const overlayTarget = document.querySelector('#overlay-target');
+const home2 = document.querySelector('#home-2');
 
 //contact page variables
 const form = document.querySelector('#contact-form');
@@ -18,12 +20,14 @@ const title = document.querySelector('#title');
 const message = document.querySelector('#message');
 const submit = document.querySelector('#submit');
 
-hamburgerMenu.addEventListener('click', (e) => {
+hamburgerMenu.addEventListener('click', () => {
     menuDrawer.classList.remove('hide');
+    overlayTarget.classList.add('body-overlay');
 })
 
 closeIcon.addEventListener('click', () => {
     menuDrawer.classList.add('hide');
+    overlayTarget.classList.remove('body-overlay');
 })
 
 

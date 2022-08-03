@@ -1,7 +1,12 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0 auto;
     font-family: livvic;
     overflow-x: hidden;
+    position: relative;
 }
 
 .hide {
@@ -26,7 +31,8 @@ a:visited {
     color: #F67E7E;
 }
 
-#header-2 button {
+#header-2 a {
+    text-align: center;
     padding: .5rem;
     background-color: #014e56;
     border: 2px solid #fff;
@@ -34,8 +40,11 @@ a:visited {
     width: 8rem;
 }
 
-#header-2 button:hover {
+#header-2 a:hover {
     cursor: pointer;
+    background-color: #fff;
+    color: #014e56;
+    transition: .4s;
 }
 
 #header {
@@ -62,6 +71,11 @@ a:visited {
     margin: 1.1em;
 }
 
+.menu a:hover {
+    color: #F67E7E;
+    transition: .4s;
+}
+
 #header-2 {
     display: flex;
     align-items: center;
@@ -79,20 +93,15 @@ a:visited {
     justify-content: flex-end;
 }
 
-#menu-drawer button {
-    width: 15rem;
-    border: 1px solid #fff;
-    background-color: #2C6269;
-    padding: 1rem;
-    border-radius: 25px;
-    color: #fff;
+#menu-drawer button:hover {
+    cursor: pointer;
 }
 
 #menu-drawer {
     width: 57%;
     background-color: #2C6269;
     position: absolute;
-    height: 100%;
+    height: 100vh;
     margin: 0 auto;
     padding: 4.3rem 2rem 0 3rem;
     z-index: 10;
@@ -135,6 +144,8 @@ a:visited {
     position: absolute;
     right: -100px;
     top: 853px;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 #home-4 {
@@ -229,7 +240,6 @@ a:visited {
 
 .build-team-info {
     display: flex;
-    background-color: 'red';
 }
 
 .build-team-headers {
@@ -307,7 +317,8 @@ a:visited {
     padding: 0 1rem 0 1rem;
 }
 
-#get-started-container > button {
+#get-started-container a {
+    text-align: center;
     align-self: center;
     padding: .5rem;
     background-color: #F67E7E;
@@ -317,8 +328,10 @@ a:visited {
     color: #012F34;
 }
 
-#get-started-container a {
-    color: #012F34;
+#get-started-container a:hover {
+    color: #F67E7E;
+    background-color: #012F34;
+    transition: .4s;
 }
 
 footer {
@@ -337,6 +350,11 @@ footer {
 #footer-menu {
     width: 7em;
     margin-right: 5em;
+}
+
+#footer-menu a:hover {
+    color: #F67E7E;
+    transition: .4s;
 }
 
 #footer-menu h2 {
@@ -606,6 +624,7 @@ textarea::placeholder {
 
 .required {
     color: #F67E7E;
+    margin: .3rem 0 0 0;
 }
 
 .contact-build-team-info {
@@ -619,7 +638,6 @@ textarea::placeholder {
     top: 1682px;
 }
 
-/* keep */
 @media screen and (max-width: 1312px) {
     #about-6 {
         top: 1982px;
@@ -930,7 +948,7 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 768px) {
-    #header-2 button {
+    #header-2 a {
         display: none;
     }
     #header-2 img {
@@ -945,6 +963,15 @@ textarea::placeholder {
     }
     #mobile-menu-container {
         display: flex;
+    }
+    #menu-drawer-contact-button {
+        text-align: center;
+        padding: .5rem 3rem;
+        background-color: #2C6269;
+        border: 2px solid #fff;
+        border-radius: 30px;
+        position: absolute;
+        top: 220px;
     }
     .build-team-info {
         display: flex;
@@ -1074,4 +1101,53 @@ textarea::placeholder {
 #socials {
     margin: 0 auto;
 }
+.body-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+}
+
+@media screen and (max-width: 499px) {
+    .about-socials {
+        justify-content: space-between;
+        padding: 0 6.2rem;
+    }
+    .side-2 p {
+        font-size: .95rem;
+        color: #fff;
+        padding: 0 3rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .build-team-info {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    #home-2 {
+        top: 563px;
+    }
+    #home-3 {
+        top: 663px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    #home-2 {
+        top: 587px;
+        height: 6rem;
+    }
+    #home-3 {
+        top: 684px;
+    }
 }
